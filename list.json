@@ -377,5 +377,23 @@
             "folder": 0
         },
         "use_api": false
+    },
+    "mega":{
+        "regex":{
+            "host": "mega.nz|mega.co.nz",
+            "online": 0,
+            "offline": 0,
+            "folder": 0
+        },
+        "use_api": true
+    },
+    "multiup":{
+        "regex":{
+            "host": "multiup.org",
+            "online": 0,
+            "offline": 0,
+            "folder": 0
+        },
+        "use_api": true
     }
 }
