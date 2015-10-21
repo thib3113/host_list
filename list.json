@@ -1,380 +1,381 @@
-[
-    {
-        "name": "one_fichier",
-        "host_regex": "(.+)1fichier.com/|(.+)alterupload.com/|(.+)cjoint.net/|(.+)desfichiers.com/|(.+)dfichiers.com/|(.+)megadl.fr/|(.+)mesfichiers.org/|(.+)piecejointe.net/|(.+)pjointe.com/|(.+)tenvoi.com/|(.+)dl4free.com/",
-        "online_regex": "float:none;margin:auto;font-weight:bold",
-        "offline_regex": "File not found !|<div style=\"line-height:1.5em;padding:30px;font-size:16px;font-weight:bold;text-align:center;margin:auto;color:#aa0000\">",
-        "overload_regex": 0,
-        "folder_regex": "<td class=\"normal titre ohidden\" style=\"width:500px\">FileName</td>|<td class=\"normal titre ohidden\" style=\"width:500px\">Nom du fichier</td>",
+{
+    "one_fichier":{
+        "regex":{
+            "host": "(.+)1fichier.com/|(.+)alterupload.com/|(.+)cjoint.net/|(.+)desfichiers.com/|(.+)dfichiers.com/|(.+)megadl.fr/|(.+)mesfichiers.org/|(.+)piecejointe.net/|(.+)pjointe.com/|(.+)tenvoi.com/|(.+)dl4free.com/",
+            "online": "float:none;margin:auto;font-weight:bold",
+            "offline": "File not found !|<div style=\"line-height:1.5em;padding:30px;font-size:16px;font-weight:bold;text-align:center;margin:auto;color:#aa0000\">",
+            "folder": "<td class=\"normal titre ohidden\" style=\"width:500px\">FileName</td>|<td class=\"normal titre ohidden\" style=\"width:500px\">Nom du fichier</td>"
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "bayfiles",
-        "host_regex": "(.+)bayfiles.net/file/(.+)",
-        "online_regex": "<div id=\"download-header\">|<a class=\"highlighted-btn\" href=\"(.+)\">Premium Download</a>",
-        "offline_regex": "<p>The requested file could not be found.</p>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "bayfiles":{
+        "regex":{
+            "host": "(.+)bayfiles.net/file/(.+)",
+            "online": "<div id=\"download-header\">|<a class=\"highlighted-btn\" href=\"(.+)\">Premium Download</a>",
+            "offline": "<p>The requested file could not be found.</p>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "billionuploads",
-        "host_regex": "(.+)billionuploads.com/(.+)",
-        "online_regex": "<button class=\"btn\" type=\"submit\" id=\"btn_download\" name=\"submit_btn\" width=\"240\" height=\"60\">",
-        "offline_regex": "<div style=\"font-size: 55px;font-weight: bold;margin-top: 108px;margin-left: 45px;\">File Not found</div>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "billionuploads":{
+        "regex":{
+            "host": "(.+)billionuploads.com/(.+)",
+            "online": "<button class=\"btn\" type=\"submit\" id=\"btn_download\" name=\"submit_btn\" width=\"240\" height=\"60\">",
+            "offline": "<div style=\"font-size: 55px;font-weight: bold;margin-top: 108px;margin-left: 45px;\">File Not found</div>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "bitshare",
-        "host_regex": "(.+)bitshare.com/files/(.+)",
-        "online_regex": "<table  style=\"width:100%;\">",
-        "offline_regex": "<div class=\"quotbox2\">",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "bitshare":{
+        "regex":{
+            "host": "(.+)bitshare.com/files/(.+)",
+            "online": "<table  style=\"width:100%;\">",
+            "offline": "<div class=\"quotbox2\">",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "datafilehost",
-        "host_regex": "(.+)datafilehost.com/(.+)",
-        "online_regex": "<form name=\"cbf\" style=\"width:250px;background:#eee;border:1px solid #ddd;margin:10px 8px 2px 0px;padding:3px;font-size:11px;",
-        "offline_regex": "deleted due to inactivity",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "datafilehost":{
+        "regex":{
+            "host": "(.+)datafilehost.com/(.+)",
+            "online": "<form name=\"cbf\" style=\"width:250px;background:#eee;border:1px solid #ddd;margin:10px 8px 2px 0px;padding:3px;font-size:11px;",
+            "offline": "deleted due to inactivity",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "depositfiles",
-        "host_regex": "(.+)depositfiles.com/files/(.+)|(.+)dfiles.eu/files/(.+)",
-        "online_regex": "<div class=\"file_size\">Taille du fichier: <b>(.+)</b></div>",
-        "offline_regex": "<div class=\"no_download_msg\" id=\"no_download_message\">",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "depositfiles":{
+        "regex":{
+            "host": "(.+)depositfiles.com/files/(.+)|(.+)dfiles.eu/files/(.+)",
+            "online": "<div class=\"file_size\">Taille du fichier: <b>(.+)</b></div>",
+            "offline": "<div class=\"no_download_msg\" id=\"no_download_message\">",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "divxpress",
-        "host_regex": "(.+)divxpress.com/(.+)",
-        "online_regex": ";font-size:26px;font-weight:bold;color: #5e5e5e;\">",
-        "offline_regex": "<b>fichier non trouve </b>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "divxpress":{
+        "regex":{
+            "host": "(.+)divxpress.com/(.+)",
+            "online": ";font-size:26px;font-weight:bold;color: #5e5e5e;\">",
+            "offline": "<b>fichier non trouve </b>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "filefactory",
-        "host_regex": "(.+)filefactory.com/file/(.+)",
-        "online_regex": "<input type=\"hidden\" name=\"redirect\" value=\"/file/(.+)\"/>",
-        "offline_regex": "<title>File Not Found(.+)</title>|<h2>Invalid Download Link</h2>",
-        "overload_regex": 0,
-        "folder_regex": "<strong>This file is only available to Premium Members.</strong>",
+    "filefactory":{
+        "regex":{
+            "host": "(.+)filefactory.com/file/(.+)",
+            "online": "<input type=\"hidden\" name=\"redirect\" value=\"/file/(.+)\"/>",
+            "offline": "<title>File Not Found(.+)</title>|<h2>Invalid Download Link</h2>",
+            "folder": "<strong>This file is only available to Premium Members.</strong>"
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "fileom",
-        "host_regex": "(.+)fileom.com/(.+)",
-        "online_regex": "<span class=\"size\">(.+)</span>",
-        "offline_regex": "<div class=\"page-title\">fichier non trouve </div>|<div class=\"page-title\">The file was removed by administrator</div>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "fileom":{
+        "regex":{
+            "host": "(.+)fileom.com/(.+)",
+            "online": "<span class=\"size\">(.+)</span>",
+            "offline": "<div class=\"page-title\">fichier non trouve </div>|<div class=\"page-title\">The file was removed by administrator</div>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "fileparadox",
-        "host_regex": "(.+)fileparadox.in/(.+)",
-        "online_regex": "<font style=\"font-size:18px;\">",
-        "offline_regex": "<h1>fichier non trouve </h1>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "fileparadox":{
+        "regex":{
+            "host": "(.+)fileparadox.in/(.+)",
+            "online": "<font style=\"font-size:18px;\">",
+            "offline": "<h1>fichier non trouve </h1>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "filesupload",
-        "host_regex": "(.+)filesupload.org/(.+)",
-        "online_regex": "<th class=\"descr\">",
-        "offline_regex": "<li>File has been removed.</li>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "filesupload":{
+        "regex":{
+            "host": "(.+)filesupload.org/(.+)",
+            "online": "<th class=\"descr\">",
+            "offline": "<li>File has been removed.</li>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "freakshare",
-        "host_regex": "(.+)freakshare.com/files/(.+)",
-        "online_regex": "<b>Gratuit</b>",
-        "offline_regex": "<h1 style=\"text-align:left;\">erreur </h1>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "freakshare":{
+        "regex":{
+            "host": "(.+)freakshare.com/files/(.+)",
+            "online": "<b>Gratuit</b>",
+            "offline": "<h1 style=\"text-align:left;\">erreur </h1>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "free",
-        "host_regex": "(.+)dl.free.fr/(.+)",
-        "online_regex": "<td style=\"text-align: left; border: 1px solid #ffffff; padding: 2px\">Fichier:</td>",
-        "offline_regex": "Fichier inexistant.",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "free":{
+        "regex":{
+            "host": "(.+)dl.free.fr/(.+)",
+            "online": "<td style=\"text-align: left; border: 1px solid #ffffff; padding: 2px\">Fichier:</td>",
+            "offline": "Fichier inexistant.",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "gboxes",
-        "host_regex": "(.+)gboxes.com/(.+)",
-        "online_regex": "<input type=\"submit\" name=\"method_free\" value=\"",
-        "offline_regex": "<b>fichier non trouve </b>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "gboxes":{
+        "regex":{
+            "host": "(.+)gboxes.com/(.+)",
+            "online": "<input type=\"submit\" name=\"method_free\" value=\"",
+            "offline": "<b>fichier non trouve </b>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "gigasize",
-        "host_regex": "(.+)gigasize.com/get(.+)",
-        "online_regex": "<div class=\"fileInfo\">",
-        "offline_regex": "<h2 class=\"error\">(.+)</h2>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "gigasize":{
+        "regex":{
+            "host": "(.+)gigasize.com/get(.+)",
+            "online": "<div class=\"fileInfo\">",
+            "offline": "<h2 class=\"error\">(.+)</h2>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "gigaup",
-        "host_regex": "(.+)gigaup.fr/\\?g=(.+)",
-        "online_regex": "<center><input type=\"submit\" name=\"dl_file\"(.+)</center>",
-        "offline_regex": "Supprimé car non téléchargé",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "gigaup":{
+        "regex":{
+            "host": "(.+)gigaup.fr/\\?g=(.+)",
+            "online": "<center><input type=\"submit\" name=\"dl_file\"(.+)</center>",
+            "offline": "Supprimé car non téléchargé",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "groovesharing",
-        "host_regex": "(.+)groovesharing.com/(.+)",
-        "online_regex": "<h3 class=\"remove-margin\">(.+)</h3>",
-        "offline_regex": "<li>- Le lien du fichier est incorrect </li>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "groovesharing":{
+        "regex":{
+            "host": "(.+)groovesharing.com/(.+)",
+            "online": "<h3 class=\"remove-margin\">(.+)</h3>",
+            "offline": "<li>- Le lien du fichier est incorrect </li>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "hugefiles",
-        "host_regex": "(.+)hugefiles.net/(.+)",
-        "online_regex": "<span style=\"font-size:16px; font-family:Arial, Helvetica, sans-serif; font-weight:normal; color:#5c5c5c;\">(.+)</span>",
-        "offline_regex": "margin-top:2px; margin-bottom:2px;\">File Not Found:</p>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "hugefiles":{
+        "regex":{
+            "host": "(.+)hugefiles.net/(.+)",
+            "online": "<span style=\"font-size:16px; font-family:Arial, Helvetica, sans-serif; font-weight:normal; color:#5c5c5c;\">(.+)</span>",
+            "offline": "margin-top:2px; margin-bottom:2px;\">File Not Found:</p>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "hulkfile",
-        "host_regex": "(.+)hulkfile.eu/(.+)",
-        "online_regex": "<h2 style=\"font-weight:normal !important; margin-bottom:5px; font-family:Arial, Helvetica, sans-serif !important; font-size:17px;\">FILE NAME:</h2>",
-        "offline_regex": "<h3>File Not found</h3>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "hulkfile":{
+        "regex":{
+            "host": "(.+)hulkfile.eu/(.+)",
+            "online": "<h2 style=\"font-weight:normal !important; margin-bottom:5px; font-family:Arial, Helvetica, sans-serif !important; font-size:17px;\">FILE NAME:</h2>",
+            "offline": "<h3>File Not found</h3>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "jumbofiles",
-        "host_regex": "(.+)jumbofiles.com/\\w{12}",
-        "online_regex": "(.+)CONTENT=\"Download file (.+)\">",
-        "offline_regex": "Not Found(.+)",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "jumbofiles":{
+        "regex":{
+            "host": "(.+)jumbofiles.com/\\w{12}",
+            "online": "(.+)CONTENT=\"Download file (.+)\">",
+            "offline": "Not Found(.+)",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "junocloud",
-        "host_regex": "(.+)junocloud.me/(.+)",
-        "online_regex": "<p class=\"request_filesize\">(.+)</p>",
-        "offline_regex": "<h1>fichier non trouve </h1>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "junocloud":{
+        "regex":{
+            "host": "(.+)junocloud.me/(.+)",
+            "online": "<p class=\"request_filesize\">(.+)</p>",
+            "offline": "<h1>fichier non trouve </h1>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "nowdownload",
-        "host_regex": "(.+)nowdownload.ch/dl/(.+)",
-        "online_regex": "<input type=\"button\" class=\"btn btn-success\" id=\"regular_download\" value=\"REGULAR DOWNLOAD\">",
-        "offline_regex": "<p class=\"alert alert-danger\">This file does not exist!</p>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "nowdownload":{
+        "regex":{
+            "host": "(.+)nowdownload.ch/dl/(.+)",
+            "online": "<input type=\"button\" class=\"btn btn-success\" id=\"regular_download\" value=\"REGULAR DOWNLOAD\">",
+            "offline": "<p class=\"alert alert-danger\">This file does not exist!</p>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "partage_facile",
-        "host_regex": "(.+)partage-facile.com/(.+)|(.+)paf.im/(.+)",
-        "online_regex": "<td>(.+)</td>",
-        "offline_regex": "<h1>Envoyez vos fichiers maintenant</h1>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "partage_facile":{
+        "regex":{
+            "host": "(.+)partage-facile.com/(.+)|(.+)paf.im/(.+)",
+            "online": "<td>(.+)</td>",
+            "offline": "<h1>Envoyez vos fichiers maintenant</h1>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "putlocker",
-        "host_regex": "(.+)putlocker.com/file/(.+)|(.+)firedrive.com/file/(.+)",
-        "online_regex": "<div class=\"external_title_left\">(.+)</div>",
-        "offline_regex": "This file might have been moved, replaced or deleted.</div>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "putlocker":{
+        "regex":{
+            "host": "(.+)putlocker.com/file/(.+)|(.+)firedrive.com/file/(.+)",
+            "online": "<div class=\"external_title_left\">(.+)</div>",
+            "offline": "This file might have been moved, replaced or deleted.</div>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "rapidgator",
-        "host_regex": "(.+)rapidgator.net/file/(.+)|(.+)rg.to/file/(.+)",
-        "online_regex": "<p style=\"word-wrap: break-word;width: 490px;line-height: 19px;\">",
-        "offline_regex": "<h3>Fichier non trouvé</h3>|<span>Obtenez les avantages du compte Premium dès maintenant !</span>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "rapidgator":{
+        "regex":{
+            "host": "(.+)rapidgator.net/file/(.+)|(.+)rg.to/file/(.+)",
+            "online": "<p style=\"word-wrap: break-word;width: 490px;line-height: 19px;\">",
+            "offline": "<h3>Fichier non trouvé</h3>|<span>Obtenez les avantages du compte Premium dès maintenant !</span>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "rockfile",
-        "host_regex": "(.+)rockfile.eu/(.+)",
-        "online_regex": "<input type=\"submit\" name=\"method_free\" id=\"freeDownload\"",
-        "offline_regex": "<div style=\"width:700px;text-align:center; font-size:25pt;\" id=\"searching\"> <i class=\"fa fa-spinner fa-spin\"></i> Looking for File ... </div>",
-        "overload_regex": 0,
+    "rockfile":{
+        "regex":{
+            "host": "(.+)rockfile.eu/(.+)",
+            "online": "<input type=\"submit\" name=\"method_free\" id=\"freeDownload\"",
+            "offline": "<div style=\"width:700px;text-align:center; font-size:25pt;\" id=\"searching\"> <i class=\"fa fa-spinner fa-spin\"></i> Looking for File ... </div>",
+            "folder":0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "share_online",
-        "host_regex": "(.+)share-online.biz/dl/(.+)",
-        "online_regex": "(.+)var file(.+)",
-        "offline_regex": "<div id=\"dl_failure\" class=\"ui-widget\">",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "share_online":{
+        "regex":{
+            "host": "(.+)share-online.biz/dl/(.+)",
+            "online": "(.+)var file(.+)",
+            "offline": "<div id=\"dl_failure\" class=\"ui-widget\">",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "solidfiles",
-        "host_regex": "(.+)solidfiles.com/(.+)",
-        "online_regex": "File size",
-        "offline_regex": "The file you are trying to download has been claimed by a copyright holder",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "solidfiles":{
+        "regex":{
+            "host": "(.+)solidfiles.com/(.+)",
+            "online": "File size",
+            "offline": "The file you are trying to download has been claimed by a copyright holder",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "turbobit",
-        "host_regex": "(.+)turbobit.net/(.+).html",
-        "online_regex": "<span class=\"file-title\" id=\"file-title\">(.+)</span>",
-        "offline_regex": "<h1>Searching file...Please wait...</h1>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "turbobit":{
+        "regex":{
+            "host": "(.+)turbobit.net/(.+).html",
+            "online": "<span class=\"file-title\" id=\"file-title\">(.+)</span>",
+            "offline": "<h1>Searching file...Please wait...</h1>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "toutbox",
-        "host_regex": "(.+)toutbox.fr/(.+)",
-        "online_regex": "<a href=\"(.+)\" class=\"redButtonCSS downloadAction\" title=\"Download\">",
-        "offline_regex": 0,
-        "overload_regex": 0,
-        "folder_regex": "<div class=\"customColor\" style=\"font-size: 20px; padding: 20px 0 0 0; text-align: center\">",
+    "toutbox":{
+        "regex":{
+            "host": "(.+)toutbox.fr/(.+)",
+            "online": "<a href=\"(.+)\" class=\"redButtonCSS downloadAction\" title=\"Download\">",
+            "offline": 0,
+            "folder": "<div class=\"customColor\" style=\"font-size: 20px; padding: 20px 0 0 0; text-align: center\">"
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "upafile",
-        "host_regex": "(.+)upafile.com/(.+)",
-        "online_regex": "<b>nom de fichier :</b>",
-        "offline_regex": "<b>fichier non trouve </b>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "upafile":{
+        "regex":{
+            "host": "(.+)upafile.com/(.+)",
+            "online": "<b>nom de fichier :</b>",
+            "offline": "<b>fichier non trouve </b>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "uptobox",
-        "host_regex": "(.+)uptobox.com/(.+)",
-        "online_regex": "<input type=\"hidden\" name=\"fname\" value=\"(.+)\">",
-        "offline_regex": "<span class=\"para_title\">Fichier introuvable </span><br /><br /><br />|<span class=\"para_title\">Berkas tidak ditemukan </span>|<span class=\"para_title\">File not found </span>",
-        "overload_regex": 0,
-        "folder_regex": "<td style=\"width:250px\" class=\"tri\">",
+    "uptobox":{
+        "regex":{
+            "host": "(.+)uptobox.com/(.+)",
+            "online": "<input type=\"hidden\" name=\"fname\" value=\"(.+)\">",
+            "offline": "<span class=\"para_title\">Fichier introuvable </span><br /><br /><br />|<span class=\"para_title\">Berkas tidak ditemukan </span>|<span class=\"para_title\">File not found </span>",
+            "folder": "<td style=\"width:250px\" class=\"tri\">"
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "uploaded",
-        "host_regex": "(.+)uploaded.to/file/(.+)|(.+)ul.to/(.+)|(.+)uploaded.net/file/(.+)|(.+)uploaded.net/f/(.+)",
-        "online_regex": "(.+)<a href=\"(.+)\" id=\"filename\">(.+)</a>(.+)",
-        "offline_regex": "doesn't contain files",
-        "overload_regex": 0,
-        "folder_regex": "<div class=\"center\" id=\"folderc\">",
+    "uploaded":{
+        "regex":{
+            "host": "(.+)uploaded.to/file/(.+)|(.+)ul.to/(.+)|(.+)uploaded.net/file/(.+)|(.+)uploaded.net/f/(.+)",
+            "online": "(.+)<a href=\"(.+)\" id=\"filename\">(.+)</a>(.+)",
+            "offline": "doesn't contain files",
+            "folder": "<div class=\"center\" id=\"folderc\">"
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "uploading",
-        "host_regex": "(.+)uploading.com/files/(.+)",
-        "online_regex": "<h1><i class=\"small_header_up_icon\"></i>(.+)",
-        "offline_regex": "<i class=\"file_error\"></i>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "uploading":{
+        "regex":{
+            "host": "(.+)uploading.com/files/(.+)",
+            "online": "<h1><i class=\"small_header_up_icon\"></i>(.+)",
+            "offline": "<i class=\"file_error\"></i>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "uploadable",
-        "host_regex": "(.+)uploadable.ch/file/(.+)",
-        "online_regex": "<span>Slow Speed Download</span>",
-        "offline_regex": "<h1>File not available</h1>|<h1>This file is no longer available.</h1>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "uploadable":{
+        "regex":{
+            "host": "(.+)uploadable.ch/file/(.+)",
+            "online": "<span>Slow Speed Download</span>",
+            "offline": "<h1>File not available</h1>|<h1>This file is no longer available.</h1>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "vozupload",
-        "host_regex": "(.+)vozupload.com/(.+)",
-        "online_regex": "<font style=\"color:#114\">(.+)</font>",
-        "offline_regex": "<b>File Not Found</b>",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "vozupload":{
+        "regex":{
+            "host": "(.+)vozupload.com/(.+)",
+            "online": "<font style=\"color:#114\">(.+)</font>",
+            "offline": "<b>File Not Found</b>",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "youwatch",
-        "host_regex": "(.+)youwatch.org/(.+)",
-        "online_regex": "<span style=\"font-style:italic; color:#bbbbbb;\">",
-        "offline_regex": "<div style=\"width:500px;text-align:left;\">",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "youwatch":{
+        "regex":{
+            "host": "(.+)youwatch.org/(.+)",
+            "online": "<span style=\"font-style:italic; color:#bbbbbb;\">",
+            "offline": "<div style=\"width:500px;text-align:left;\">",
+            "folder": 0
+        },
         "use_api": false,
         "uncheckable": false
     },
-    {
-        "name": "zippyshare",
-        "host_regex": "(.+)zippyshare.com/v/(.+)/file.html",
-        "online_regex": "<div class=\"left\" style=\"width: 700px;\">",
-        "offline_regex": "(.+)File does not exist on this server</div>|File has expired and does not exist anymore on this server",
-        "overload_regex": 0,
-        "folder_regex": 0,
+    "zippyshare":{
+        "regex":{
+            "host": "(.+)zippyshare.com/v/(.+)/file.html",
+            "online": "<div class=\"left\" style=\"width: 700px;\">",
+            "offline": "(.+)File does not exist on this server</div>|File has expired and does not exist anymore on this server",
+            "folder": 0
+        },
         "use_api": false
     }
-]
+}
