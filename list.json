@@ -395,5 +395,14 @@
             "folder": 0
         },
         "use_api": true
+    },
+    "revivelink":{
+        "regex":{
+            "host": "revivelink\.com",
+            "online": 0,
+            "offline": 0,
+            "folder": 0
+        },
+        "use_api": true
     }
 }
