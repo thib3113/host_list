@@ -398,7 +398,7 @@
     },
     "revivelink":{
         "regex":{
-            "host": "revivelink\.com",
+            "host": "revivelink\\.com",
             "online": 0,
             "offline": 0,
             "folder": 0
